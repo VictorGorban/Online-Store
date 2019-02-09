@@ -1,0 +1,109 @@
+html {
+  font-size: 16px; }
+
+body {
+  background-color: #ffffcc;
+  color: #999;
+  font-family: BlinkMacSystemFont, -apple-system, 'Open Sans', sans-serif; }
+
+img {
+  display: block;
+  width: 100%; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #e62e04; }
+
+.full-width {
+  width: 100%; }
+
+.flex {
+  display: flex; }
+  .flex.column {
+    flex-flow: column nowrap; }
+  .flex.row {
+    flex-flow: row nowrap; }
+  .flex.no-wrap {
+    flex-wrap: nowrap; }
+  .flex.wrap {
+    flex-wrap: wrap; }
+  .flex.pack-start {
+    justify-content: flex-start; }
+  .flex.pack-center {
+    justify-content: center; }
+  .flex.pack-end {
+    justify-content: flex-end; }
+  .flex.pack-around {
+    justify-content: space-around; }
+  .flex.pack-between {
+    justify-content: space-between; }
+  .flex.pack-evenly {
+    justify-content: space-between; }
+  .flex.align-start {
+    align-items: flex-start; }
+  .flex.align-center {
+    align-items: center; }
+  .flex.align-end {
+    align-items: flex-end; }
+  .flex.align-baseline {
+    align-items: baseline; }
+
+.bg-white {
+  background-color: #fff; }
+
+header.main-top .lighthouse {
+  height: 36px;
+  border-bottom: 1px solid #e9e9e9;
+  background-color: #f8f8f8; }
+  header.main-top .lighthouse .wrap-container {
+    margin: 0 5%; }
+
+.nav-top__item {
+  border-right: 1px solid #e9e9e9;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .nav-top__item.dropdown {
+    position: relative;
+    transition: all 200ms ease-out; }
+    .nav-top__item.dropdown::after {
+      font-family: "FontAwesome";
+      content: " \f107"; }
+    .nav-top__item.dropdown:hover {
+      cursor: pointer; }
+      .nav-top__item.dropdown:hover ul {
+        display: block; }
+    .nav-top__item.dropdown ul {
+      border: 1px transparent;
+      border-radius: 2px;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 150px;
+      background-color: rgba(255, 255, 255, 0.91);
+      box-shadow: 0 0 10px #9E9E9E; }
+      .nav-top__item.dropdown ul li {
+        padding: 0 5px; }
+        .nav-top__item.dropdown ul li:hover {
+          background-color: #f8f8f8;
+          color: #999999; }
+
+.nav-top ul {
+  display: none; }
+
+.main-header .wrap-container {
+  margin: 0 5%;
+  padding: 20px 0; }
+
+.logo-container .logo-img {
+  height: 50px;
+  width: 150px;
+  object-fit: contain; }

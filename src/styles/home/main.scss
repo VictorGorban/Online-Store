@@ -1,0 +1,88 @@
+body {
+	background-color: #ffffcc;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+a {
+	color: inherit;
+
+	&:hover {
+		text-decoration: none;
+		cursor: pointer;
+		color: inherit;
+	}
+}
+
+.full-width {
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+	&.row {
+		flex-flow: row nowrap;
+	}
+
+	&.no-wrap {
+		flex-wrap: nowrap;
+	}
+
+	&.wrap {
+		flex-wrap: wrap;
+
+	}
+
+	&.pack-start {
+		justify-content: flex-start;
+	}
+
+	&.pack-center {
+		justify-content: center;
+	}
+
+	&.pack-end {
+		justify-content: flex-end;
+	}
+
+	// Типа "pack around space"
+	&.pack-around {
+		justify-content: space-around;
+	}
+
+	// по аналогии с bootstrap
+	&.pack-between {
+		justify-content: space-between;
+	}
+
+	&.pack-evenly {
+		justify-content: space-between;
+	}
+}
+
+header.main-top {
+	.lighthouse {
+		height: 36px;
+		border-bottom: 1px solid #e9e9e9;
+		background-color: #f8f8f8;
+	}
+	padding: 0 5%;
+}
+
+.nav-top {
+	&__item {
+		border-right: 1px solid #e9e9e9;
+
+		&:first-of-type {
+			border-left: 1px solid #e9e9e9;
+		}
+	}
+	
+	ul{
+		display: none;
+	}
+}
+
